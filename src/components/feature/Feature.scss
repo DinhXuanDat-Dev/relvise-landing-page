@@ -1,0 +1,17 @@
+.relvise{
+    &__features{
+        &-col{
+            margin-right: 20px;
+            width: 33.33333333333%;
+            &:last-child{
+                p{
+                    color: #fff;
+                }
+            }
+        }
+        &-cardItem{
+            padding: 10px 20px;
+
+        }
+    }
+}
