@@ -6,12 +6,16 @@ import Clients from './container/clients/Clients';
 
 function App() {
   return (
-    <div className="relvise-page">
-      <div className="section-header">
-        <Navbar/>
-        <Hero />
-        <Features />
-        <Clients />
+    <div className="App">
+      <div className="relvise-page">
+        <div className="section-header">
+          <Navbar/>
+          <Hero />
+          <Features />
+        </div>
+        <div className="section-main">
+          <Clients />
+        </div>
       </div>
     </div>
   );

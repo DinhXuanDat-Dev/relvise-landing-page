@@ -1,6 +1,10 @@
 .relvise{
     &__features{
-        padding: 20px 80px;
+        padding: 20px 80px 0;
+        position: relative;
+        &-container{
+            position: absolute;
+        }
         &-row{
             display: flex;
         }

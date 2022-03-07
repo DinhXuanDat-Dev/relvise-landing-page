@@ -1,5 +1,10 @@
-.section-header{
-    background: url(/assests/images/rel-background.png) no-repeat;
-    height: 130vh;
-    padding: 20px 80px;
+.section{
+    &-header{
+        background: url(/assests/images/rel-background.png) no-repeat;
+        height: 45rem;
+    }
+    &-main{
+        background-color: #252B42;
+        padding-top: 10rem;
+    }
 }

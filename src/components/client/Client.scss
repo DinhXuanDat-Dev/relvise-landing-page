@@ -1,17 +1,17 @@
+@import "../../scss/index";
+
 .relvise{
     &__clients{
         &-col{
             margin-right: 20px;
             width: 33.33333333333%;
-            &:last-child{
-                p{
-                    color: #fff;
-                }
-            }
         }
         &-cardItem{
             padding: 10px 20px;
-
+            p{
+                color: #737373;
+                font-weight: bold;
+            }
         }
     }
 }

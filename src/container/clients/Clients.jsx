@@ -25,10 +25,14 @@ const clientsData = [
     },
 ];
 
-const Client = () => {
+const Clients = () => {
     return (
         <div className="relvise__clients">
             <div className="relvise__clients-container">
+                <div className="relvise__clients-title">
+                    <h1>Every Client Matter</h1>
+                    <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+                </div>
                 <div className="relvise__clients-row">
                     {clientsData.map((item, index) => (
                         <Client 
@@ -44,4 +48,4 @@ const Client = () => {
     )
 }
 
-export default Client;
+export default Clients;

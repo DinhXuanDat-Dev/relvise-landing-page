@@ -2,10 +2,10 @@ import "./Client.scss"
 const Client = ({ title, text, icon }) => {
 
     return (
-        <div className="relvise__Clients-col" style={{background}}>
-            <div className="relvise__Clients-cardItem">
+        <div className="relvise__clients-col">
+            <div className="relvise__clients-cardItem">
                 <img src={icon} alt="setting-icon" />
-                <h3 style={{color}}>{title}</h3>
+                <h1>{title}</h1>
                 <p>{text} </p>
             </div>
         </div>
