@@ -1,0 +1,15 @@
+@import "../../scss/index";
+
+.relvise{
+    &__advises{
+        &-cardItem{
+            p{
+                color: #737373;
+            }
+        }
+        &-content{
+            text-align: left;
+            padding: 20px;
+        }
+    }
+}

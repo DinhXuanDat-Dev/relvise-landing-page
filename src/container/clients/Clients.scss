@@ -1,0 +1,31 @@
+.relvise{
+    &__clients{
+        padding: 20px 80px;
+        &-container{
+            text-align: center;
+        }
+        &-title{
+            width: 60%;
+            margin: 40px auto;
+            h1{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        &-row{
+            display: flex;
+        }
+        &-cardItem{
+            background-color: #fff;
+            padding: 20px;
+            height: 220px;
+            display: flex;
+            flex-direction: column;
+            figure{
+                flex: 1;
+            }
+        }
+    }
+}
