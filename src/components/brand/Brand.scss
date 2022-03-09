@@ -1,0 +1,24 @@
+.relvise{
+    &__brand{
+        padding: 20px 80px;
+        margin-top: 80px;
+        &-logos{
+            overflow: hidden;
+            .slick-arrow{
+                display: none!important;
+            }
+            .slick-prev{
+                display: none!important;
+
+            }
+        }
+        &-sliderItem{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.slick-track{
+    display: flex;
+}

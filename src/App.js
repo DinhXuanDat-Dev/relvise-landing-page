@@ -5,6 +5,8 @@ import Features from './container/features/Features';
 import Clients from './container/clients/Clients';
 import Advises from './container/advises/Advises';
 import About from './components/about/About';
+import Brand from './components/brand/Brand';
+import Contact from './components/brand/contact/Contact';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Clients />
           <Advises />
           <About />
+          <Brand />
+          <Contact />
         </div>
       </div>
     </div>
