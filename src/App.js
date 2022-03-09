@@ -6,7 +6,7 @@ import Clients from './container/clients/Clients';
 import Advises from './container/advises/Advises';
 import About from './components/about/About';
 import Brand from './components/brand/Brand';
-import Contact from './components/brand/contact/Contact';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (

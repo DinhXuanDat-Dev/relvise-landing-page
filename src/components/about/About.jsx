@@ -3,7 +3,7 @@ const About = () => {
     return (
         <div className="relvise__about">
             <div className="relvise__about-container">
-                <div className="relvise__about-title">
+                <div className="relvise__title">
                     <h1>Who We Are</h1>
                     <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
                 </div>

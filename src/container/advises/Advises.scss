@@ -1,18 +1,7 @@
 .relvise{
     &__advises{
-        padding: 20px 80px;
         &-container{
             text-align: center;
-        }
-        &-title{
-            width: 60%;
-            margin: 40px auto;
-            h1{
-                color: #fff;
-            }
-            p{
-                color: #fff;
-            }
         }
         &-row{
             display: flex;

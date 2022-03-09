@@ -2,9 +2,19 @@
     &-header{
         background: url(/assests/images/rel-background.png) no-repeat;
         height: 45rem;
+        padding: 0 8rem;
     }
     &-main{
         background-color: #252B42;
-        padding-top: 10rem;
+        padding: 10rem 8rem 0;
+    }
+}
+
+.relvise{
+    &__title{
+        width: 60%;
+        margin: 40px auto;
+        color: #fff;
+        text-align: center;
     }
 }

@@ -29,7 +29,7 @@ const Advises = () => {
     return (
         <div className="relvise__advises">
             <div className="relvise__advises-container">
-                <div className="relvise__advises-title">
+                <div className="relvise__title">
                     <h1>Practice Advise</h1>
                     <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics  </p>
                 </div>
