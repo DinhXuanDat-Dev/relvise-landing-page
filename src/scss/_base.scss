@@ -5,3 +5,11 @@ $back-ground-gradient-1: linear-gradient(270deg, #D71489 -1.04%, #004788 100%);
 $text-color: #252B42;
 $second-text-color: #252B42;
 $transparent-color: transparent;
+$white-color: #fff;
+
+$primary-font: 'Montserrat', sans-serif;
+
+:export {
+    primarycolor: $primary-color;
+    whitecolor: $white-color;
+}

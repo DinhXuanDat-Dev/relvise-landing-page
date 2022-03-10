@@ -1,0 +1,76 @@
+@import "../../scss/base";
+
+.relvise{
+    &__footer{
+        &-contact{
+            display: flex;
+            justify-content: space-between;
+            &_title{
+                text-align: left;
+                color: #fff;
+                padding: 82px 0 40px;
+            }
+            &_btn{
+                align-self: center;
+                background-color: #FF7B47;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+                height: 58px;
+                margin-top: 40px;
+                padding: 15px 40px;
+            }
+        }
+        &-container{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 -10rem;
+            padding: 50px 155px;
+            background-color: $secondary-color-2;
+        }
+        &--col,
+        &--col2{
+            margin-right: 30px;
+            h5{
+                font-size: 16px;
+                color: #fff;
+            }
+            ul{
+                padding: 0;
+                li{
+                    color: #fff;
+                    list-style-type: none;
+                    font-size: 14px;
+                    line-height: 34px;
+                }
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+        &--col2{
+            a{
+                vertical-align: top;
+                margin-left: 5px;
+            }
+            img{
+                margin: 5px;
+            }
+        }
+        &-copyright{
+            display: flex;
+            justify-content: space-between;
+            &_title{
+                color: #fff;
+            }
+        }
+        &-socials{
+            align-self: center;
+            img{
+                margin-left: 10px;
+            }
+        }
+    }
+}

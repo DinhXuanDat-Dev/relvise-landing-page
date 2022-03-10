@@ -7,6 +7,8 @@ import Advises from './container/advises/Advises';
 import About from './components/about/About';
 import Brand from './components/brand/Brand';
 import Contact from './components/contact/Contact';
+import Exposure from './components/exposure/Exposure';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
           <About />
           <Brand />
           <Contact />
+          <Exposure />
+        </div>
+        <div className="section-footer">
+          <Footer />
         </div>
       </div>
     </div>

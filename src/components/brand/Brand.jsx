@@ -20,8 +20,8 @@ const Brand = () => {
                 <div className="relvise__brand-logos">
                     <Slider {...sliderSettings}>
                         {sliderItems.map((item, index) => (
-                            <div className="relvise__brand-sliderItem">
-                                <img src={item} alt={item + index}/>
+                            <div className="relvise__brand-sliderItem" key={index}>
+                                <img src={item} alt="brand-img"/>
                             </div>
                         ))}
                     </Slider>

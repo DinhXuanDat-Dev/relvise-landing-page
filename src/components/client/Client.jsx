@@ -5,7 +5,7 @@ const Client = ({ title, text, icon }) => {
         <div className="relvise__clients-col">
             <div className="relvise__clients-cardItem">
                 <figure>
-                    <img src={icon} alt="setting-icon" />
+                    <img src={icon} alt="client-icon" />
                 </figure>
                 <h1>{title}</h1>
                 <p>{text} </p>
