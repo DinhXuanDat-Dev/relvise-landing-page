@@ -11,8 +11,8 @@ const Brand = () => {
         speed: 500,
         dots: false,
         arrows: false,
-        slidesToShow: 5,
-        slidesToScroll: 2,
+        slidesToShow: 6,
+        slidesToScroll: 1,
     };
     return(
         <div className="relvise__brand">
