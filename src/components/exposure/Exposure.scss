@@ -1,4 +1,5 @@
 @import "../../scss/base";
+@import "../../scss/mixin";
 .relvise{
     &__exposure{
         margin-top: 80px;
@@ -6,6 +7,9 @@
             display: flex;
             &:nth-child(0){
                 display: none;
+            }
+            @include breakpoint(sp){
+                flex-direction: column;
             }
         }
         &-item{
@@ -47,6 +51,9 @@
                     border: solid 1px #fff;
                     background: transparent;
                 }
+            }
+            @include breakpoint(sp){
+                margin: 15px 40px;
             }
         }
     }

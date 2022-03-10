@@ -1,11 +1,19 @@
+@import "../../scss/mixin";
 .relvise{
     &__features{
-        position: relative;
         &-container{
-            position: absolute;
+            @include breakpoint(pc){
+                position: absolute;
+            }
         }
         &-row{
             display: flex;
+            @include breakpoint(sp){
+                flex-direction: column;
+            }
+        }
+        @include breakpoint(pc){
+            position: relative;
         }
     }
 }

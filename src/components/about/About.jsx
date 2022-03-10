@@ -8,8 +8,11 @@ const About = () => {
                     <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
                 </div>
                 <div className="relvise__about-wrapper">
-                    <div className="relvise__about-media">
+                    <div className="relvise__about-media pc-only">
                         <iframe width="650" height="415" src="https://www.youtube.com/embed/Qj06rNemNI8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                    <div className="relvise__about-media sp-only">
+                        <iframe width="333" height="442" src="https://www.youtube.com/embed/Qj06rNemNI8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className="relvise__about-content">
                         <div className="relvise__about-content__title">

@@ -1,16 +1,28 @@
 @import "../../scss/index";
+@import "../../scss/mixin";
 
 .relvise{
     &__clients{
         &-col{
-            margin-right: 20px;
-            width: 33.33333333333%;
+            @include breakpoint(pc){
+                width: 33.33333333333%;
+                margin-right: 20px;
+            }
+            @include breakpoint(sp){
+                margin: 20px 60px;
+            }
         }
         &-cardItem{
             padding: 10px 20px;
             p{
                 color: #737373;
                 font-weight: bold;
+            }
+            @include breakpoint(sp){
+                h1{
+                    font-size: 40px;
+                    margin: 20px;
+                }
             }
         }
     }

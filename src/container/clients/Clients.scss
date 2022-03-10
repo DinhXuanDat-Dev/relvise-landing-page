@@ -1,11 +1,14 @@
+@import "../../scss/mixin";
 .relvise{
     &__clients{
-        margin: 100px 0;
         &-container{
             text-align: center;
         }
         &-row{
             display: flex;
+            @include breakpoint(sp){
+                flex-direction: column;
+            }
         }
         &-cardItem{
             background-color: #fff;
@@ -16,6 +19,9 @@
             figure{
                 flex: 1;
             }
+        }
+        @include breakpoint(pc){
+            margin: 100px 0;
         }
     }
 }

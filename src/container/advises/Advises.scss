@@ -1,3 +1,5 @@
+@import "../../scss/mixin";
+
 .relvise{
     &__advises{
         margin: 125px 0 80px;
@@ -6,20 +8,26 @@
         }
         &-row{
             display: flex;
+            @include breakpoint(sp){
+                flex-direction: column;
+            }
         }
         &-cardItem{
             background-color: #fff;
             margin-right: 20px;
             padding: 20px 0;
-            // display: flex;
-            // flex-direction: column;
             figure{
                 width: 100%;
                 height: 100%;
             }
+            @include breakpoint(sp){
+                margin: 20px 60px;
+            }
         }
         &-col{
-            flex: 0 25%;
+            @include breakpoint(pc){
+                flex: 0 25%;
+            }
         }
     }
 }

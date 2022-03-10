@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
             <div className="relvise__footer-copyright">
                 <div className="relvise__footer-copyright_title">
-                    <h3>Consulting Agency For Your Business</h3>
+                    <h3>Made With Love By Figmaland <br/> All rights reserved</h3>
                 </div>
                 <div className="relvise__footer-socials">
                     <img src={facebook} alt="footer-icon"></img>

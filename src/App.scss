@@ -1,21 +1,36 @@
+@import "./scss/mixin";
 .section{
     &-header{
-        background: url(/assests/images/rel-background.png) no-repeat;
-        height: 45rem;
-        padding: 0 8rem;
+
+        @include breakpoint(pc){
+            background: url(/assests/images/rel-background.png) no-repeat;
+            padding: 0 8rem;
+            height: 45rem;
+        }
+        @include breakpoint(sp){
+            background: url(/assests/images/background-sp.png) no-repeat;
+        }
     }
     &-main,
     &-footer{
         background-color: #252B42;
-        padding: 6rem 8rem 0;
+        @include breakpoint(pc){
+            padding: 6rem 8rem 0;
+        }
     }
 }
 
 .relvise{
     &__title{
-        width: 60%;
-        margin: 40px auto;
-        color: #fff;
         text-align: center;
+        color: #fff;
+        width: 60%;
+        @include breakpoint(pc){
+            margin: 40px auto;
+        }
+        @include breakpoint(sp){
+            margin: 0 auto;
+            padding: 40px 0;
+        }
     }
 }

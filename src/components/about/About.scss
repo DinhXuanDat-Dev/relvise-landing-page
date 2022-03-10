@@ -1,8 +1,21 @@
+@import "../../scss/mixin";
 .relvise{
     &__about{
         margin: 100px 0 136px;
         &-media{
-            flex: 1 0.75;
+            @include breakpoint(pc){
+                flex: 1 0.75;
+                .sp-only{
+                    display: none;
+                }
+
+            }
+            @include breakpoint(sp){
+                flex-direction: column;
+                .pc-only{
+                    display: none;
+                }
+            }
         }
         &-content{
             flex: 0.55;
@@ -36,11 +49,32 @@
                         height: 50px;
                     }
                 }
+                @include breakpoint(sp){
+                    margin-left: 35px;
+                    h3{
+                        font-size: 16px;
+                    }
+                }
             }
         }
         &-wrapper{
             display: flex;
             justify-content: space-between;
+            @include breakpoint(sp){
+                flex-direction: column;
+                margin: 0 30px;
+            }
+        }
+        @include breakpoint(pc){
+            .sp-only{
+                display: none;
+            }
+
+        }
+        @include breakpoint(sp){
+            .pc-only{
+                display: none;
+            }
         }
     }
 }

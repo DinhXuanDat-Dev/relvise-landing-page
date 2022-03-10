@@ -13,6 +13,16 @@ const Brand = () => {
         arrows: false,
         slidesToShow: 6,
         slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                // slidesToShow: 1,
+                // slidesToScroll: 1,
+                infinite: true,
+              }
+            }
+        ]
     };
     return(
         <div className="relvise__brand">

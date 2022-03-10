@@ -1,9 +1,15 @@
+@import "../../scss/mixin";
 .relvise{
     &__features{
         padding-top: 80px;
         &-col{
-            margin-right: 20px;
-            width: 33.33333333333%;
+            @include breakpoint(pc){
+                margin-right: 20px;
+                width: 33.33333333333%;
+            }
+            @include breakpoint(sp){
+                margin: 10px 20px;
+            }
             &:last-child{
                 p{
                     color: #fff;

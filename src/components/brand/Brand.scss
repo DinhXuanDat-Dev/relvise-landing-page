@@ -1,3 +1,4 @@
+@import "../../scss/mixin";
 .relvise{
     &__brand{
         margin: 50px 0 70px;
@@ -20,4 +21,15 @@
 
 .slick-track{
     display: flex;
+    @include breakpoint(sp){
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        .slick-slide{
+            width: auto!important;
+            margin: 20px 0;
+        }
+    }
 }
