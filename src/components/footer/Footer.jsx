@@ -18,37 +18,37 @@ const Footer = () => {
                     <div className="relvise__footer--col">
                         <h5>Company Info</h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Carier</a></li>
-                            <li><a href="#">We are hiring</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#home">About Us</a></li>
+                            <li><a href="#home">Carier</a></li>
+                            <li><a href="#home">We are hiring</a></li>
+                            <li><a href="#home">Blog</a></li>
                         </ul>   
                     </div>
                     <div className="relvise__footer--col">
                         <h5>Company Info</h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Carier</a></li>
-                            <li><a href="#">We are hiring</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#product">About Us</a></li>
+                            <li><a href="#product">Carier</a></li>
+                            <li><a href="#product">We are hiring</a></li>
+                            <li><a href="#product">Blog</a></li>
                         </ul>   
                     </div>
                     <div className="relvise__footer--col">
                         <h5>Company Info</h5>
                         <ul>
-                            <li><a href="#">Business Marketing</a></li>
-                            <li><a href="#">User Analytic</a></li>
-                            <li><a href="#">Live Chat</a></li>
-                            <li><a href="#">Unlimited Support</a></li>
+                            <li><a href="#pricing">Business Marketing</a></li>
+                            <li><a href="#pricing">User Analytic</a></li>
+                            <li><a href="#pricing">Live Chat</a></li>
+                            <li><a href="#pricing">Unlimited Support</a></li>
                         </ul>   
                     </div>
                     <div className="relvise__footer--col">
                         <h5>Company Info</h5>
                         <ul>
-                            <li><a href="#">IOS & Android</a></li>
-                            <li><a href="#">Watch a Demo</a></li>
-                            <li><a href="#">Customer</a></li>
-                            <li><a href="#">API</a></li>
+                            <li><a href="#contact">IOS & Android</a></li>
+                            <li><a href="#contact">Watch a Demo</a></li>
+                            <li><a href="#contact">Customer</a></li>
+                            <li><a href="#contact">API</a></li>
                         </ul>   
                     </div>
                     <div className="relvise__footer--col2">
@@ -56,15 +56,15 @@ const Footer = () => {
                         <ul>
                             <li>
                                 <img src={tel} alt="icon-footer"></img>
-                                <a href="#">(480) 555-0103</a>
+                                <a href="#contact">(480) 555-0103</a>
                             </li>
                             <li>
                                 <img src={location} alt="icon-footer"></img>
-                                <a href="#">4517 Washington Ave.</a>
+                                <a href="#contact">4517 Washington Ave.</a>
                             </li>
                             <li>
                                 <img src={send} alt="icon-footer"></img>
-                                <a href="#">debra.holt@expample.com</a>
+                                <a href="#contact">debra.holt@expample.com</a>
                             </li>
                         </ul>   
                     </div>
