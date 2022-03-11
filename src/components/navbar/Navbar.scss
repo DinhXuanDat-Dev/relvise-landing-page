@@ -47,8 +47,15 @@
         }
       }
       &-menu{
-        display: flex;
-        &_sp{
+          display: flex;
+          li{
+            list-style-type: none;
+          }
+          a{
+            text-decoration: none;
+            color: #fff;
+          }
+          &_sp{
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -56,8 +63,8 @@
           color: #fff;
           background-color: #252B42;
           li{
-            list-style-type: none;
             margin: 20px;
+            list-style-type: none;
             font-size: 30px;
           }
         }
@@ -67,4 +74,21 @@
       }
 
     }
+}
+
+.nav-bar--scrolling{
+  &__hidden{
+    opacity: 0.8;
+  }
+  @include breakpoint(pc){
+    position: fixed;
+    // top: 0;
+    background: url("../../assests/images/rel-background.png");
+    margin: 0 -8rem;
+    width: -webkit-fill-available;
+    z-index: 999;
+    opacity: 1;
+    transition: opacity 0.6s, visibility 0.6s;
+    // transform: opacity 350ms ease-in-out;
+  }
 }

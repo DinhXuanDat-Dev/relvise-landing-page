@@ -1,13 +1,28 @@
 import "./Navbar.scss";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cartIcon, searchIcon } from "./imports";
+import { isMobile } from 'react-device-detect';
+import useScrollListener from "./hooks/useScrollListener";
+
 
 const Navbar = () => {
+    //Change Navbar styles when scrolling
+    const [navClassList, setNavClassList] = useState([]);
+    const scroll = useScrollListener();
+    useEffect(() => {
+        const _classList = ['nav-bar--scrolling__hidden'];
+    
+        if (scroll.y > 150)
+          _classList.push("nav-bar--scrolling");
+    
+        setNavClassList(_classList);
+    }, [scroll.y]);
+    
 
     const [toggleMenu, setToggleMenu] = useState(true);
     return (
-        <div className="relvise__navbar">
+        <div className={navClassList.join(" ") + " relvise__navbar"}>
             <div className="relvise__nav-container">
                 <div className="relvise__nav-logo">
                     <h1>Relvise</h1>
@@ -32,7 +47,7 @@ const Navbar = () => {
                 </div>
             </div>
             {
-                !toggleMenu && 
+                !toggleMenu && isMobile &&
                 <div className="relvise__nav-menu_sp">
                     <li>Home</li>
                     <li>Product</li>

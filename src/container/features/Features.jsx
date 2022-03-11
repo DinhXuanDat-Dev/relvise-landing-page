@@ -29,7 +29,7 @@ const featuresData = [
 
 const Features = () => {
     return (
-        <div className="relvise__features">
+        <div className="relvise__features" id="product">
             <div className="relvise__features-container">
                 <div className="relvise__features-row">
                     {featuresData.map((item, index) => (
