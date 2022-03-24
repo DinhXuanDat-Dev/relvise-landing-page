@@ -1,94 +1,103 @@
 @import "../../scss/index";
 @import "../../scss/mixin";
 
-.relvise{
-    &__nav{
-      display: flex;
-      justify-content: space-between;
-      &-container{
+.relvise {
+    &__nav {
         display: flex;
-        justify-content: space-around;
-      }
-      &-logo h1{
-        justify-content: flex-start;
-        color: #fff;
-        @include breakpoint(sp){
-          font-size: 24px;
-          vertical-align: middle;
-          margin: 30px;
-        }
-      }
-      &-links{
-        color: #fff;
-        display: flex;
-        &-icons{
-            width: 100%;
-            height: 100%;
-            object-fit: container;
-        }
-        ul {
+        justify-content: space-between;
+        &-container {
             display: flex;
-            flex-direction: row;
-            list-style: none;
         }
-        li {
-            padding: 20px;
-            cursor: pointer;
-            &:hover{
-              color: $primary-color;
-              transform: scale(1.1);
-              transition: all .2s ease-in-out;
+        &-logo h1 {
+            justify-content: flex-start;
+            color: #fff;
+            @include breakpoint(sp) {
+                font-size: 24px;
+                vertical-align: middle;
+                margin: 30px;
             }
         }
-        @include breakpoint(pc){
-          .toggle-menu{
-            margin-left: 10rem;
-          }
-        }
-      }
-      &-menu{
-          display: flex;
-          li{
-            list-style-type: none;
-          }
-          a{
-            text-decoration: none;
+        &-links {
             color: #fff;
-          }
-          &_sp{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-          background-color: #252B42;
-          li{
-            margin: 20px;
-            list-style-type: none;
-            font-size: 30px;
-          }
+            display: flex;
+            // flex: 1;
+            // justify-content: flex-end;
+            margin-left: 300px;
+            &-icons {
+                width: 100%;
+                height: 100%;
+                object-fit: container;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+            }
+            li {
+                padding: 20px;
+                cursor: pointer;
+                &:hover {
+                    color: $primary-color;
+                    transform: scale(1.1);
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            @include breakpoint(pc) {
+                .toggle-menu {
+                    margin-left: 10rem;
+                    display: none;
+                }
+            }
+            @include breakpoint(sp){
+              margin-left: 0;
+            }
         }
-        @include breakpoint(sp){
-          display: none;
+        &-menu {
+            display: flex;
+            li {
+                list-style-type: none;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+            &_sp {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                background-color: #252b42;
+                li {
+                    margin: 20px;
+                    list-style-type: none;
+                    font-size: 30px;
+                }
+              @include breakpoint(pc){
+                display: none;
+              }
+            }
+            @include breakpoint(sp) {
+                display: none;
+            }
         }
-      }
-
     }
 }
 
-.nav-bar--scrolling{
-  &__hidden{
-    opacity: 0.8;
-  }
-  @include breakpoint(pc){
-    position: fixed;
-    // top: 0;
-    background: url("../../assests/images/rel-background.png");
-    margin: 0 -8rem;
-    width: -webkit-fill-available;
-    z-index: 999;
-    opacity: 1;
-    transition: opacity 0.6s, visibility 0.6s;
-    // transform: opacity 350ms ease-in-out;
-  }
+.nav-bar--scrolling {
+    &__hidden {
+        opacity: 0.8;
+    }
+    @include breakpoint(pc) {
+        position: fixed;
+        // top: 0;
+        background: url("../../assests/images/rel-background.png");
+        margin: 0 -8rem;
+        padding: 0 8rem;
+        width: -webkit-fill-available;
+        z-index: 999;
+        opacity: 1;
+        transition: opacity 0.6s, visibility 0.6s;
+        // transform: opacity 350ms ease-in-out;
+    }
 }

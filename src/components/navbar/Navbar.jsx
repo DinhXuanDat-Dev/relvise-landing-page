@@ -2,7 +2,6 @@ import "./Navbar.scss";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { useEffect, useState } from "react";
 import { cartIcon, searchIcon } from "./imports";
-import { isMobile } from 'react-device-detect';
 import useScrollListener from "./hooks/useScrollListener";
 
 
@@ -18,9 +17,32 @@ const Navbar = () => {
     
         setNavClassList(_classList);
     }, [scroll.y]);
-    
 
-    const [toggleMenu, setToggleMenu] = useState(true);
+    //Menu active
+    const [toggleMenu, setToggleMenu] = useState(false);
+    const [screenSize, setScreenSize] = useState(null)
+
+    useEffect(() => {
+        const handleResize = () => setScreenSize(window.innerWidth)
+
+        window.addEventListener('resize', handleResize);
+
+        handleResize();
+
+        return () => window.removeEventListener('resize', handleResize);
+    })
+
+    useEffect(() => {
+        if(screenSize < 768){
+            setToggleMenu(false)
+        }else{
+            setToggleMenu(true)
+        }
+    }, [screenSize])
+
+    // menu active
+
+
     return (
         <div className={navClassList.join(" ") + " relvise__navbar"}>
             <div className="relvise__nav-container">
@@ -39,15 +61,15 @@ const Navbar = () => {
                         <li><img src={cartIcon} alt="cart-icon"/></li>
                         <li className="toggle-menu">
                             {toggleMenu
-                                ? <RiMenu3Line onClick={() => setToggleMenu(false)}/>
-                                : <RiCloseLine onClick={() => setToggleMenu(true)}/>
+                                ? <RiCloseLine onClick={() => setToggleMenu(false)}/>
+                                : <RiMenu3Line onClick={() => setToggleMenu(true)}/>
                             }
                         </li>
                     </ul>
                 </div>
             </div>
             {
-                !toggleMenu && isMobile &&
+                toggleMenu &&
                 <div className="relvise__nav-menu_sp">
                     <li>Home</li>
                     <li>Product</li>
