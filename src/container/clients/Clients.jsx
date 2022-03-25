@@ -14,7 +14,7 @@ const clientsData = [
         icon: statistics,
     },
     {
-        title: '98%',
+        title: '98 %',
         text: 'Consumer Products',
         icon: reward,
     },
@@ -36,7 +36,7 @@ const Clients = () => {
                 <div className="relvise__clients-row">
                     {clientsData.map((item, index) => (
                         <Client 
-                            title={item.title} 
+                            title={item.title}
                             text={item.text} 
                             icon={item.icon} 
                             key={item.title + index} 

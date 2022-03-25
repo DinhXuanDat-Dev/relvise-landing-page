@@ -1,5 +1,8 @@
 import "./Client.scss"
+import CountUp from 'react-countup';
 const Client = ({ title, text, icon }) => {
+
+    console.log(typeof(title));
 
     return (
         <div className="relvise__clients-col">
@@ -7,7 +10,13 @@ const Client = ({ title, text, icon }) => {
                 <figure>
                     <img src={icon} alt="client-icon" />
                 </figure>
-                <h1>{title}</h1>
+                <h1>
+                    <CountUp 
+                    end = {parseInt(title)}
+                    duration = {2}
+                    suffix="+"
+                />
+                </h1>
                 <p>{text} </p>
             </div>
         </div>
